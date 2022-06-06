@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main page</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Nav -->
+    <nav class="nav">
+      <!-- Logo -->
+      <a href="#home" class="logo color">Z.</a>
+      <!-- Navbar -->
+      <input type="checkbox" id="toggler">
+      <label for="toggler"><i class="ri-menu-line"></i></label>
+      <div class="menu">
+        <ul class="navbar">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#works" class="nav-link">Works</a></li>
+            <li><a href="contact_form.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Home section -->
+  <section class="home container" id="home">
+    <div class="home-content">
+      <div class="home-text">
+        <h3>Hello</h3>
+        <h2>I'm <span class="color">Zubair</span></h2>
+        <p>A<span> Computer Science </span>student of <span>UiTM</span>, passionate in both <span class="passion_color">programming</span>  and building <span class="passion_color">custom keyboards</span>. Scroll down below to see some of my works. 
+        </p>
+        <span class="mouse">
+            <!-- The mouse wheel -->
+            <span class="mouse-wheel"></span>
+        </span><br>
+        <p>It ain't much, but it's honest work.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Works section -->
+  <section class="works fade-in-bottom" id="works">
+      <h1>Works</h1>
+    <div class="card-container reveal">
+        <!-- card for custom keyboard project -->
+        <div class="cards">
+            <div class="card-body">
+                <h2>Custom <span class="color">Keyboards</span></h2><br>
+                <div class="card-image">
+                    <img src="https://source.unsplash.com/uiSxC_-s7K0" alt="Custom keyboard image from Unsplash with GMK keycaps">
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href="keyboard.html" class="btn">See more</a>
+            </div>
+        </div>
+        <!-- card for calculator -->
+        <div class="cards">
+            <div class="card-body">
+                <h2>Simple<span class="color"> Calculator</span></h2><br>
+                <div class="card-image">
+                    <img src="https://source.unsplash.com/GlavtG-umzE" alt="White calculator image form Unsplash">
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/adhamAR/simple-calculator" target="_blank" class="btn">See more</a>
+            </div>
+        </div>
+       </div>
+       
+  </section>
+  <button onclick="topFunction()" id="scroll_btn" title="Go to top" class="fade-in-bottom"><i class='bx bxs-up-arrow'></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>

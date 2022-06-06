@@ -1,0 +1,41 @@
+.kbcontainer{
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    padding: 5rem 0 2rem;
+}
+.stacked{
+    display: grid;
+}
+.stacked > * {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.card__content{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255,0), rgba(0,0,0,1));
+    /* background: rgb(0, 0, 0); */
+    align-self: end;
+    padding: 1rem;
+    box-shadow: 0 .25rem 1rem rgba(0 0 0 / .1);
+    
+}
+.card__content:hover{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255, 0));
+    
+}
+.keyboard-grid{
+    display: grid;
+    gap: .125rem;
+    row-gap: .8rem;
+    column-gap: .8rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.card__title{
+    font-size: 1.24rem;
+    line-height: 1.5;
+}
+.card__img{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
